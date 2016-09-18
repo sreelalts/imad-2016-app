@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/about', function (req, res) {
-   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+   res.sendFile(path.join(__dirname, 'ui', 'about.html')); 
 });
 
 app.get('/apps', function (req, res) {
