@@ -18,11 +18,11 @@ app.get('/about', function (req, res) {
 });
 
 app.get('/apps', function (req, res) {
-   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+  res.sendFile(path.join(__dirname, 'ui', 'apps.html')); 
 });
 
 app.get('/error', function (req, res) {
-   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+   res.sendFile(path.join(__dirname, 'ui', 'error.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
