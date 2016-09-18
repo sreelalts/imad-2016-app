@@ -13,6 +13,18 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/about', function (req, res) {
+   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+});
+
+app.get('/apps', function (req, res) {
+   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+});
+
+app.get('/error', function (req, res) {
+   res.send("Thank you for seeking data about us.. But We are sorry. this webpage can't be loaded because this web page not uploaded yet.."); 
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
